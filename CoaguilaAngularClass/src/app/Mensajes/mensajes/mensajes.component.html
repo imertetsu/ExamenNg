@@ -1,0 +1,12 @@
+<div *ngIf='ocultarImplementacion'>
+<h3 appDirectiva *ngIf='ocultarMsj'> {{ '{' }} Mensaje: '{{cita}}', autor: '{{autor}}'  {{ '}' }}</h3> 
+<button (click)="getCitas()"  *ngIf='ocultarBtn'>Obtener mensaje</button>
+<button (click)= 'ocultarMensaje()'>mostrar/ocultar Mensaje</button>
+<button (click)= 'ocultarBotonGM()'>Ocultar/mostrar btn generador de mensj</button>
+
+<div *ngIf='ocultarImagen'>
+    <img src='/assets/imagenes/Garou.png' height="500px" width="500px">
+</div>
+<button (click)= 'ocultarImage()'>mostrar/ocultar Imagen</button>
+</div>
+<button (click)='ocultarImp()'>ocultar/mostrar implementacion </button>
